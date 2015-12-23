@@ -13,6 +13,7 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\bambooBandit</object>
+    <object>objects\bambooBanditParent</object>
     <object>objects\bambooBase</object>
   </objects>
   <help>
