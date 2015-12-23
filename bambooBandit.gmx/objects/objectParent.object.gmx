@@ -60,7 +60,8 @@ drawScaleY = image_yscale
           <argument>
             <kind>1</kind>
             <string>/// depth
-depth = ((-y+view_hview)/gridSize)
+var fov = 320
+depth = ((-y+(view_hview*0.66666))/320)
 </string>
           </argument>
         </arguments>
@@ -85,16 +86,17 @@ depth = ((-y+view_hview)/gridSize)
             <kind>1</kind>
             <string>/// draw
 
-var viewCentreX = view_wview/2
-var viewCentreY = view_hview/2
+var viewCentreX = view_xview+view_wview
+var viewCentreY = view_yview+view_hview/2
 
-var depthScale = 1/depth
-var depthOffsetX = (x-viewCentreX)/depthScale
-var depthOffsetY = (y-viewCentreY)/depthScale
+var depthScale = 1/(depth+1);
+var depthOffset = -1/(depth+1);
+var depthOffsetX = (viewCentreX-x)*depthOffset
+var depthOffsetY = (viewCentreY-y)*depthOffset
 
 
-drawPositionX = x+depthOffsetX
-drawPositionY = y+depthOffsetY
+drawPositionX = viewCentreX+depthOffsetX
+drawPositionY = viewCentreY+depthOffsetY
 drawScaleX = image_xscale*depthScale
 drawScaleY = image_yscale*depthScale
 
@@ -102,10 +104,9 @@ drawScaleY = image_yscale*depthScale
 draw_sprite_ext( sprite_index, image_index, 
                 drawPositionX,
                 drawPositionY, 
-                image_xscale*drawScaleX,
-                image_yscale*drawScaleY,
+                drawScaleX,
+                drawScaleX,
                 0, c_white, 1 );
-
 
 
 

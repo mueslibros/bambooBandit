@@ -145,7 +145,13 @@ event_inherited()
             <string>/// draw
 
 // draw shaft
-//draw_sprite(shaftSprite, 0, x, y)
+
+draw_sprite_ext( shaftSprite, image_index, 
+                drawPositionX,
+                drawPositionY, 
+                drawScaleX,
+                drawScaleX,
+                0, c_white, 1 );
 </string>
           </argument>
         </arguments>

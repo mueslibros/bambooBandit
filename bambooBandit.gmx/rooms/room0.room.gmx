@@ -41,24 +41,22 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="gameGlobal" x="-64" y="-64" name="inst_FF6D1D6B" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="lane" x="0" y="448" name="inst_D15CCF4C" locked="-1" code="" scaleX="32" scaleY="1" colour="4293779346" rotation="0"/>
-    <instance objName="lane" x="0" y="416" name="inst_7ACA7D41" locked="-1" code="" scaleX="32" scaleY="1" colour="4293449589" rotation="0"/>
-    <instance objName="lane" x="0" y="384" name="inst_5FAF5801" locked="-1" code="" scaleX="32" scaleY="1" colour="4293119838" rotation="0"/>
-    <instance objName="lane" x="0" y="352" name="inst_9AB4AD32" locked="-1" code="" scaleX="32" scaleY="1" colour="4292262693" rotation="0"/>
-    <instance objName="lane" x="0" y="320" name="inst_22E36C60" locked="-1" code="" scaleX="32" scaleY="1" colour="4289829663" rotation="0"/>
-    <instance objName="spawner" x="1024" y="320" name="inst_04F6CEE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="bambooBandit" x="256" y="384" name="inst_5C42E584" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="lane" x="0" y="576" name="inst_D15CCF4C" locked="-1" code="" scaleX="32" scaleY="1" colour="4293779346" rotation="0"/>
+    <instance objName="lane" x="0" y="544" name="inst_7ACA7D41" locked="-1" code="" scaleX="32" scaleY="1" colour="4293449589" rotation="0"/>
+    <instance objName="lane" x="0" y="512" name="inst_5FAF5801" locked="-1" code="" scaleX="32" scaleY="1" colour="4293119838" rotation="0"/>
+    <instance objName="lane" x="0" y="480" name="inst_9AB4AD32" locked="-1" code="" scaleX="32" scaleY="1" colour="4292262693" rotation="0"/>
+    <instance objName="lane" x="0" y="448" name="inst_22E36C60" locked="-1" code="" scaleX="32" scaleY="1" colour="4289829663" rotation="0"/>
+    <instance objName="bambooBandit" x="256" y="512" name="inst_5C42E584" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
