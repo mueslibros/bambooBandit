@@ -12,7 +12,8 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\bambooBandit</object>
+    <object>objects\bambooBandit1</object>
+    <object>objects\bambooBandit2</object>
     <object>objects\bambooBase</object>
   </objects>
   <help>
