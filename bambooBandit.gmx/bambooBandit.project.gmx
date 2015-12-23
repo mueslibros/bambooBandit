@@ -11,6 +11,9 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\bambooBandit</object>
+  </objects>
   <help>
     <rtf>help.rtf</rtf>
   </help>
