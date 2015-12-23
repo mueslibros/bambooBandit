@@ -6,7 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\bambooBase</sprite>
+    <sprite>sprites\bambooBase_s</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
