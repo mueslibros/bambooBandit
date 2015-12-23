@@ -7,16 +7,32 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\bambooBase_s</sprite>
+    <sprite>sprites\spawner_s</sprite>
     <sprite>sprites\bambooBandit_s</sprite>
+    <sprite>sprites\lane_s</sprite>
+    <sprite>sprites\bambooShaft_s</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\bambooBandit2</object>
-    <object>objects\bambooBandit</object>
-    <object>objects\bambooBanditParent</object>
-    <object>objects\bambooBase</object>
+    <object>objects\gameGlobal</object>
+    <object>objects\objectParent</object>
+    <objects name="bandits">
+      <object>objects\bambooBanditParent</object>
+      <object>objects\bambooBandit</object>
+      <object>objects\bambooBandit2</object>
+    </objects>
+    <objects name="bamboo">
+      <object>objects\bambooBase</object>
+      <object>objects\spawner</object>
+    </objects>
+    <object>objects\lane</object>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
