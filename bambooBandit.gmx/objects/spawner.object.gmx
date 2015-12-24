@@ -28,9 +28,11 @@
             <string>// create
 alarm[0] = 1
 
-
 moveAmount = 0
 moveInterval = 32
+
+
+
 
 
 
@@ -39,7 +41,7 @@ moveInterval = 32
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -59,7 +61,6 @@ moveInterval = 32
             <string>/// step
 moveAmount += bambooBanditParent.xChange
 
-
 if (moveAmount &gt; moveInterval) {
     moveAmount -= moveInterval
     
@@ -68,7 +69,6 @@ if (moveAmount &gt; moveInterval) {
     
     if (posY &gt;= 0){
         var inst = instance_create(x,y+posY*32,bambooBase);
-        inst.depth = -1-posY
     }
 }
 

@@ -2,7 +2,7 @@
 <object>
   <spriteName>spawner_s</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -28,6 +28,10 @@
             <string>/// create
 globalvar gridSize;
 gridSize = 32
+
+
+globalvar fov;
+fov = 320
 </string>
           </argument>
         </arguments>
