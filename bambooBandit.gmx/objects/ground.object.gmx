@@ -54,9 +54,9 @@ drawDepth = 0
 //draw_self()
 
 var tex = sprite_get_texture(sprite_index,0);
-var gx = 64; // gap
+var gx = 32; // gap
 var gy = 256;
-var px = 10; // point count
+var px = 16; // point count
 var py = 1;
 
 var vcX = view_xview+view_wview/2
