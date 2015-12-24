@@ -52,22 +52,22 @@
   </views>
   <instances>
     <instance objName="ground" x="1024" y="1024" name="inst_7D84A74E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ground" x="0" y="1024" name="inst_00E6DA7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ground" x="512" y="1024" name="inst_23AA4EE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ground" x="1536" y="1024" name="inst_0CF1C27E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="lane" x="512" y="1216" name="inst_D15CCF4C" locked="-1" code="" scaleX="32" scaleY="1" colour="4293779346" rotation="0"/>
     <instance objName="lane" x="512" y="1184" name="inst_7ACA7D41" locked="-1" code="" scaleX="32" scaleY="1" colour="4293449589" rotation="0"/>
-    <instance objName="lane" x="512" y="1152" name="inst_5FAF5801" locked="-1" code="" scaleX="32" scaleY="1" colour="4293119838" rotation="0"/>
+    <instance objName="lane" x="512" y="1152" name="inst_5FAF5801" locked="0" code="" scaleX="32" scaleY="1" colour="4293119838" rotation="0"/>
     <instance objName="lane" x="512" y="1120" name="inst_9AB4AD32" locked="-1" code="" scaleX="32" scaleY="1" colour="4292262693" rotation="0"/>
     <instance objName="lane" x="512" y="1088" name="inst_22E36C60" locked="-1" code="" scaleX="32" scaleY="1" colour="4289829663" rotation="0"/>
     <instance objName="bambooBandit" x="992" y="1152" name="inst_5C42E584" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="gameGlobal" x="512" y="640" name="inst_55E15004" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="spawner" x="1568" y="1088" name="inst_44949AB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="spawner" x="1632" y="1088" name="inst_44949AB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="solidParent" x="512" y="1056" name="inst_6644C65C" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="solidParent" x="512" y="1248" name="inst_5EDA0666" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="solidParent" x="512" y="1088" name="inst_85C0120B" locked="0" code="" scaleX="4" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="background" x="0" y="1024" name="inst_4F4AFEB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="background" x="1024" y="1024" name="inst_CBF4930C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ground" x="0" y="1024" name="inst_00E6DA7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ground" x="512" y="1024" name="inst_23AA4EE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="ground" x="1536" y="1024" name="inst_0CF1C27E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="ground" x="2048" y="1024" name="inst_2B514738" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="background" x="2048" y="1024" name="inst_199BACF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
