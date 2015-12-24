@@ -6,7 +6,7 @@
   <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>objectParent</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>bambooBase_s</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -51,9 +51,57 @@ event_inherited()
 
 
 // sprite
-shaftSprite = bambooLayer1_s
+shaftSprite[0] = bambooLayer4_s
+shaftSprite[1] = bambooLayer4_s
+shaftSprite[2] = bambooLayer3_s
+shaftSprite[3] = bambooLayer2_s
+shaftSprite[4] = bambooLayer1_s
+shaftSprite[5] = bambooLayer1_s
+
+
+bambooLeaves[0] = bambooLeaves4_s
+bambooLeaves[1] = bambooLeaves4_s
+bambooLeaves[2] = bambooLeaves3_s
+bambooLeaves[3] = bambooLeaves2_s
+bambooLeaves[4] = bambooLeaves1_s
+bambooLeaves[5] = bambooLeaves1_s
+
+spritePosition = 0
+
+shaftSpriteIndex = shaftSprite[spritePosition]
+
+alarm[0] = 1
+
+
 shaftScaleX = (0.75 + random(0.25))*choose(1,-1)
 shaftScaleY = (0.75 + random(0.25))
+shaftAngle = 0 + random(5)*choose(1,-1)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+// sprite
+shaftSpriteIndex = shaftSprite[spritePosition]
+leavesSpriteIndex = bambooLeaves[spritePosition]
 </string>
           </argument>
         </arguments>
@@ -148,12 +196,23 @@ event_inherited()
 
 // draw shaft
 
-draw_sprite_ext( shaftSprite, image_index, 
+
+draw_sprite_ext(shaftSpriteIndex, image_index, 
                 drawPositionX,
                 drawPositionY, 
                 drawScaleX*shaftScaleX,
-                drawScaleX*shaftScaleY,
-                0, c_white, 1 );
+                drawScaleY*shaftScaleY,
+                shaftAngle, c_white, image_alpha );
+                
+                
+draw_sprite_ext(leavesSpriteIndex, image_index, 
+                drawPositionX,
+                drawPositionY-256,
+                drawScaleX*shaftScaleX*0.5,
+                drawScaleY*shaftScaleY*0.5,
+                shaftAngle, c_white, image_alpha );
+                
+
 </string>
           </argument>
         </arguments>

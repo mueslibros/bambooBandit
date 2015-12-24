@@ -6,7 +6,7 @@
   <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>bambooBandit_s</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -110,14 +110,6 @@ drawPositionX = viewCentreX+depthOffsetX
 drawPositionY = viewCentreY+depthOffsetY
 drawScaleX = image_xscale*depthScale
 drawScaleY = image_yscale*depthScale
-
-
-draw_sprite_ext( sprite_index, image_index, 
-                drawPositionX,
-                drawPositionY, 
-                drawScaleX,
-                drawScaleX,
-                0, c_white, 1 );
 
 
 </string>

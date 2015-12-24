@@ -5,10 +5,10 @@
   <visible>-1</visible>
   <depth>10000</depth>
   <persistent>0</persistent>
-  <parentName>objectParent</parentName>
+  <parentName>backgorundParent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -47,9 +47,17 @@ event_inherited()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// move
-x -= bambooBandit.xChange
+            <string>/// draw
 
+// draw shaft
+
+draw_sprite_ext( sprite_index, image_index, 
+                drawPositionX,
+                drawPositionY, 
+                drawScaleX,
+                drawScaleX,
+                image_angle, c_white, image_alpha );
+                
 
 </string>
           </argument>
