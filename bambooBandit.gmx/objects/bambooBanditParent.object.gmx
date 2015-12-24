@@ -77,6 +77,7 @@ moveSpeed = 0
 image_speed = 0
 spRun = banditRun_s
 spIdle = banditIdle_s
+sprite_index = banditIdle_s
 </string>
           </argument>
         </arguments>
@@ -120,6 +121,7 @@ else if (keyboard_check(vk_down)) { inY = 1; ilY = 1}
 
 
 if (x = xTarget and ilX != 0){
+    sprite_index = spRun
 
     var checkDist;
 
@@ -128,7 +130,6 @@ if (x = xTarget and ilX != 0){
 
     if (!position_meeting(xTarget+ilX*checkDist, yTarget, solidParent)
     and !position_meeting(xTarget+ilX*checkDist, yTarget, bamboo)){
-        sprite_index = spRun
         image_index += 1
         xTarget += ilX*gridSizeX
         xTarget = round(xTarget/gridSizeX)*gridSizeX
@@ -167,6 +168,7 @@ if (x != xTarget){
     else {
         if (abs(difX) &lt;= 1) {
             x = xTarget
+            sprite_index = spIdle
         }
     }
 }
@@ -196,6 +198,7 @@ if (y != yTarget){
 
     if (abs(difY) &lt;= 4) {
         y = yTarget
+        sprite_index = spIdle
     }
 }
 </string>
@@ -249,14 +252,14 @@ draw_text(x,y,xTarget)
             <kind>1</kind>
             <string>/// draw
 
-draw_sprite_ext( banditShadow_s, image_index, 
+draw_sprite_ext(banditShadow_s, image_index, 
                 drawPositionX,
                 drawPositionY, 
                 drawScaleX,
                 drawScaleX,
                 0, c_white, 1 );
 
-draw_sprite_ext( banditIdle_s, image_index, 
+draw_sprite_ext(sprite_index, image_index, 
                 drawPositionX,
                 drawPositionY, 
                 drawScaleX,
