@@ -8,11 +8,22 @@
   <sprites name="sprites">
     <sprite>sprites\bambooBase_s</sprite>
     <sprite>sprites\spawner_s</sprite>
+    <sprite>sprites\banditIdle_s</sprite>
     <sprite>sprites\bambooBandit_s</sprite>
     <sprite>sprites\lane_s</sprite>
+    <sprite>sprites\bambooForeground_s</sprite>
+    <sprite>sprites\bambooLayer1</sprite>
+    <sprite>sprites\bambooLeaves1</sprite>
+    <sprite>sprites\bambooLeaves2</sprite>
+    <sprite>sprites\bambooLeaves3</sprite>
+    <sprite>sprites\bambooLeaves4</sprite>
+    <sprite>sprites\bambooLayer2</sprite>
+    <sprite>sprites\bambooLayer3</sprite>
+    <sprite>sprites\bambooLayer4</sprite>
     <sprite>sprites\bambooShaft_s</sprite>
   </sprites>
   <backgrounds name="background">
+    <background>background\background2</background>
     <background>background\background0</background>
     <background>background\ground_bg</background>
   </backgrounds>
