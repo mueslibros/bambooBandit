@@ -10,6 +10,7 @@
     <sprite>sprites\spawner_s</sprite>
     <sprite>sprites\banditShadow_s</sprite>
     <sprite>sprites\banditIdle_s</sprite>
+    <sprite>sprites\banditRun_s</sprite>
     <sprite>sprites\bambooBandit_s</sprite>
     <sprite>sprites\lane_s</sprite>
     <sprite>sprites\bambooForeground_s</sprite>
