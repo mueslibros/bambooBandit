@@ -21,6 +21,5 @@
   <height>512</height>
   <frames>
     <frame index="0">images\ground_s_0.png</frame>
-    <frame index="1">images\ground_s_1.png</frame>
   </frames>
 </sprite>
