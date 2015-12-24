@@ -75,6 +75,7 @@ moveSpeed = 0
 
 // sprites
 image_speed = 0
+spriteScale = 0.75
 spRun = banditRun_s
 spIdle = banditIdle_s
 sprite_index = banditIdle_s
@@ -128,8 +129,7 @@ if (x = xTarget and ilX != 0){
     if (xTarget &gt;= xStart and ilX = 1) checkDist = gridSizeX
     else                               checkDist = gridSizeX
 
-    if (!position_meeting(xTarget+ilX*checkDist, yTarget, solidParent)
-    and !position_meeting(xTarget+ilX*checkDist, yTarget, bamboo)){
+    if (!position_meeting(xTarget+ilX*checkDist, yTarget, bamboo)){
         image_index += 1
         xTarget += ilX*gridSizeX
         xTarget = round(xTarget/gridSizeX)*gridSizeX
@@ -255,15 +255,15 @@ draw_text(x,y,xTarget)
 draw_sprite_ext(banditShadow_s, image_index, 
                 drawPositionX,
                 drawPositionY, 
-                drawScaleX,
-                drawScaleX,
+                drawScaleX*spriteScale,
+                drawScaleY*spriteScale,
                 0, c_white, 1 );
 
 draw_sprite_ext(sprite_index, image_index, 
                 drawPositionX,
                 drawPositionY, 
-                drawScaleX,
-                drawScaleX,
+                drawScaleX*spriteScale,
+                drawScaleY*spriteScale,
                 0, c_white, 1 );
 </string>
           </argument>

@@ -56,7 +56,7 @@ shaftSprite[1] = bambooLayer4_s
 shaftSprite[2] = bambooLayer3_s
 shaftSprite[3] = bambooLayer2_s
 shaftSprite[4] = bambooLayer1_s
-shaftSprite[5] = bambooLayer1_s
+shaftSprite[5] = bambooForeground_s
 
 
 bambooLeaves[0] = bambooLeaves4_s
@@ -195,7 +195,13 @@ event_inherited()
             <string>/// draw
 
 // draw shaft
-
+draw_sprite_ext(bambooShadow_s, image_index, 
+                drawPositionX,
+                drawPositionY,
+                drawScaleX*shaftScaleX,
+                drawScaleY*shaftScaleY,
+                0, c_white, 0.33 );
+                
 
 draw_sprite_ext(shaftSpriteIndex, image_index, 
                 drawPositionX,
