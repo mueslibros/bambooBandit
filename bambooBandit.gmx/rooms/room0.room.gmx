@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="background0" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="bamboo_bg" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -59,11 +59,15 @@
     <instance objName="bambooBandit" x="1024" y="1152" name="inst_5C42E584" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="gameGlobal" x="512" y="640" name="inst_55E15004" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="spawner" x="1568" y="1088" name="inst_44949AB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="background" x="512" y="1056" name="inst_A235A573" locked="0" code="" scaleX="2" scaleY="2" colour="4278255424" rotation="0"/>
-    <instance objName="background" x="1088" y="1056" name="inst_E5E85D85" locked="0" code="" scaleX="2" scaleY="2" colour="4278255424" rotation="0"/>
-    <instance objName="background" x="1536" y="1056" name="inst_1B8084C5" locked="0" code="" scaleX="2" scaleY="2" colour="4278255424" rotation="0"/>
     <instance objName="solidParent" x="512" y="1056" name="inst_6644C65C" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="solidParent" x="512" y="1248" name="inst_5EDA0666" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="solidParent" x="512" y="1088" name="inst_85C0120B" locked="0" code="" scaleX="4" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="background" x="0" y="1024" name="inst_4F4AFEB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="background" x="1024" y="1024" name="inst_CBF4930C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ground" x="0" y="1024" name="inst_00E6DA7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ground" x="512" y="1024" name="inst_23AA4EE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ground" x="1024" y="1024" name="inst_7D84A74E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ground" x="1536" y="1024" name="inst_0CF1C27E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

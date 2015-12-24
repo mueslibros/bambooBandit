@@ -51,7 +51,9 @@ event_inherited()
 
 
 // sprite
-shaftSprite = bambooShaft_s
+shaftSprite = bambooLayer1_s
+shaftScaleX = (0.75 + random(0.25))*choose(1,-1)
+shaftScaleY = (0.75 + random(0.25))
 </string>
           </argument>
         </arguments>
@@ -149,8 +151,8 @@ event_inherited()
 draw_sprite_ext( shaftSprite, image_index, 
                 drawPositionX,
                 drawPositionY, 
-                drawScaleX,
-                drawScaleX,
+                drawScaleX*shaftScaleX,
+                drawScaleX*shaftScaleY,
                 0, c_white, 1 );
 </string>
           </argument>

@@ -12,18 +12,20 @@
     <sprite>sprites\bambooBandit_s</sprite>
     <sprite>sprites\lane_s</sprite>
     <sprite>sprites\bambooForeground_s</sprite>
-    <sprite>sprites\bambooLayer1</sprite>
-    <sprite>sprites\bambooLeaves1</sprite>
-    <sprite>sprites\bambooLeaves2</sprite>
-    <sprite>sprites\bambooLeaves3</sprite>
-    <sprite>sprites\bambooLeaves4</sprite>
-    <sprite>sprites\bambooLayer2</sprite>
-    <sprite>sprites\bambooLayer3</sprite>
-    <sprite>sprites\bambooLayer4</sprite>
+    <sprite>sprites\bambooLeaves1_s</sprite>
+    <sprite>sprites\bambooLeaves2_s</sprite>
+    <sprite>sprites\bambooLeaves3_s</sprite>
+    <sprite>sprites\bambooLeaves4_s</sprite>
+    <sprite>sprites\bambooLayer1_s</sprite>
+    <sprite>sprites\bambooLayer2_s</sprite>
+    <sprite>sprites\bambooLayer3_s</sprite>
+    <sprite>sprites\bambooLayer4_s</sprite>
     <sprite>sprites\bambooShaft_s</sprite>
+    <sprite>sprites\background_s</sprite>
+    <sprite>sprites\ground_s</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\background2</background>
+    <background>background\bamboo_bg</background>
     <background>background\background0</background>
     <background>background\ground_bg</background>
   </backgrounds>
@@ -42,7 +44,9 @@
       <object>objects\spawner</object>
     </objects>
     <object>objects\lane</object>
+    <object>objects\ground</object>
     <object>objects\background</object>
+    <object>objects\backgorundParent</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

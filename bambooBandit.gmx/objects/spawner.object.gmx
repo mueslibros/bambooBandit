@@ -65,7 +65,7 @@ if (moveAmount &gt; moveInterval) {
     moveAmount -= moveInterval
     
     // create bamboo
-    var posY = choose(-3,-2,-1,0,1,2,3,4,)
+    var posY = choose(-3,-2,-1,0,1,2,3,4,5)
     
     if (posY &gt;= 0){
         var inst = instance_create(x,y+posY*32,bamboo);
