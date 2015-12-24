@@ -26,8 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// create
-globalvar gridSize;
-gridSize = 32
+globalvar gridSizeX;
+globalvar gridSizeY;
+
+gridSizeX = 32;
+gridSizeY = 32;
 
 
 globalvar fov;

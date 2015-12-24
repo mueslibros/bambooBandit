@@ -20,13 +20,14 @@
   <objects name="objects">
     <object>objects\gameGlobal</object>
     <object>objects\objectParent</object>
+    <object>objects\solidParent</object>
     <objects name="bandits">
       <object>objects\bambooBanditParent</object>
       <object>objects\bambooBandit</object>
       <object>objects\bambooBandit2</object>
     </objects>
     <objects name="bamboo">
-      <object>objects\bambooBase</object>
+      <object>objects\bamboo</object>
       <object>objects\spawner</object>
     </objects>
     <object>objects\lane</object>

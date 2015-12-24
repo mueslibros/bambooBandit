@@ -62,6 +62,8 @@
     <instance objName="background" x="512" y="1056" name="inst_A235A573" locked="0" code="" scaleX="2" scaleY="2" colour="4278255424" rotation="0"/>
     <instance objName="background" x="1088" y="1056" name="inst_E5E85D85" locked="0" code="" scaleX="2" scaleY="2" colour="4278255424" rotation="0"/>
     <instance objName="background" x="1536" y="1056" name="inst_1B8084C5" locked="0" code="" scaleX="2" scaleY="2" colour="4278255424" rotation="0"/>
+    <instance objName="solidParent" x="512" y="1056" name="inst_6644C65C" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="solidParent" x="512" y="1248" name="inst_5EDA0666" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

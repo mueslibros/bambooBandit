@@ -47,10 +47,14 @@ event_inherited()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Creation code
+            <string>/// create
 smileTime = 60
+xTarget = x
 yTarget = y
 xStart = x
+yStart = y
+
+xPre = x
 
 
 // input
@@ -97,38 +101,72 @@ xChange = 0;
 
 
 // X
-if (keyboard_check(vk_left)) {
-    inX = -1
-    ilX = -1
-}
-else if (keyboard_check(vk_right)) {
-    inX = 1
-    ilX = 1
-}
+if (keyboard_check_pressed(vk_left)) { inX = -1; ilX = -1 }
+else if (keyboard_check_pressed(vk_right)) { inX = 1; ilX = 1 }
 
 // Y
 if (keyboard_check_pressed(vk_up))        { inY = -1; ilY = -1 }
 else if (keyboard_check_pressed(vk_down)) { inY = 1; ilY = 1}
 
 
-if (inX != 0){
-    x += inX*movePlus
-    if (x &gt; xStart) {
-        x = xStart
-        xChange = movePlus
+
+if (x = xTarget and ilX != 0){
+
+    var checkDist;
+
+    if (xTarget &gt;= xStart and ilX = 1) checkDist = gridSizeX
+    else                               checkDist = gridSizeX
+
+    if (!position_meeting(xTarget+ilX*checkDist, yTarget, bamboo)){
+        xTarget += ilX*gridSizeX
+        xTarget = floor(xTarget/gridSizeX)*gridSizeX
+    }
+
+    
+    ilX = 0
+}
+
+
+
+// update target
+
+
+
+
+// change target y
+var xDif = xTarget - x;
+
+if (x &gt;= xStart) {
+    x = xStart
+
+    if (abs(xDif) &lt; 2) {
+        xTarget = x
+        xChange = xDif
     }
     else {
-
+        xTarget -= xDif*0.5
+        xChange = xDif*0.5
     }
 
 }
+else {
+    if (abs(xDif) &lt; 2) {
+        x = xTarget
+    }
+    else x += xDif*0.5
+}
+
+
+
+
+
 
 
 // change target y
 if (y = yTarget and ilY != 0){
-    if (position_meeting(x,yTarget+ilY*gridSize,lane)){
-        yTarget += ilY*gridSize
-        yTarget = round(yTarget/gridSize)*32
+    if (place_free(xTarget,yTarget+ilY*gridSizeY/2)){
+        yTarget += ilY*gridSizeY
+        yTarget = round(yTarget/gridSizeY)*gridSizeY
     }
     ilY = 0
 }
@@ -137,18 +175,8 @@ if (y = yTarget and ilY != 0){
 // update target
 var yDif = yTarget - y
 
-if (abs(yDif) &lt; 2) {
-    y = yTarget
-    
-    //move_snap(gridSize, gridSize);
-}
-else {
-    y += yDif*0.5
-}
-
-
-
-depth = -y/gridSize
+if (abs(yDif) &lt; 2) y = yTarget
+else               y += yDif*0.5
 </string>
           </argument>
         </arguments>
@@ -173,6 +201,11 @@ depth = -y/gridSize
             <kind>1</kind>
             <string>/// inherit
 event_inherited()
+
+
+
+draw_text(x,y,xTarget)
+
 </string>
           </argument>
         </arguments>
